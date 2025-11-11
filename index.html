@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -15,7 +18,8 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid d-flex justify-content-between ps-4 pe-4 pe-md-5 pe-lg-5">
 
-            <a class="navbar-brand text-white fs-3 fw-bolder" href="#"><span>Digl</span>Boost</a>
+            <a class="navbar-brand text-white fs-3 fw-bolder" href="#"
+                onclick="submitBtnClicked()"><span>Digl</span>Boost</a>
 
             <button class="navbar-toggler bg-white text-white-50" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -29,16 +33,17 @@
                         <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white ms-md-4 ms-lg-4" href="#">About</a>
+                        <a class="nav-link text-white ms-md-4 ms-lg-4" href="#" onclick="submitBtnClicked()">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white ms-md-4 ms-lg-4" href="#">Services</a>
+                        <a class="nav-link text-white ms-md-4 ms-lg-4" href="#"
+                            onclick="submitBtnClicked()">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white ms-md-4 ms-lg-4" href="#">Blog</a>
+                        <a class="nav-link text-white ms-md-4 ms-lg-4" href="#" onclick="submitBtnClicked()">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white ms-md-4 ms-lg-4" href="#">Contact</a>
+                        <a class="nav-link text-white ms-md-4 ms-lg-4" href="#" onclick="submitBtnClicked()">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -58,16 +63,261 @@
             <p class="mb-0">bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
             <p class="mb-0">bla bla bla bla bla bla bla bla bla bla bla bla blab la blabal</p>
             <p>bla bla bla bla bla bla bla bla</p>
-            <button class="btn text-white rounded-5 fw-bolder my-4 py-3 px-5">Get a Free Ice-Cream</button>
+            <button class="btn text-white rounded-5 fw-bolder my-4 py-3 px-5" onclick="submitBtnClicked()">Get a Free
+                Ice-Cream</button>
         </div>
         <!-- hero1 Ends here -->
+
+
+
+
+        <!-- services card section Starts from here -->
+        <div class="serviceCardDiv mb-5 pt-4">
+            <div class="text-center my-5">
+                <h2 class="fw-bold fs-1">Our Core Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem doloribus, <br /> repellendus nesciunt
+                    deleniti pariatur</p>
+            </div>
+
+            <!-- cards -->
+            <div class="cardDiv w-100 d-sm-flex d-md-flex d-lg-flex flex-wrap justify-content-around px-3">
+
+                <div class="card cardDivCards" onclick="submitBtnClicked()">
+                    <div class="card-body text-center rounded-4 shadow px-4 py-4">
+                        <i class="fa-solid fa-magnifying-glass fs-2 mb-3"></i>
+                        <h5 class="card-title">SEO & Content Marketing</h5>
+                        <p class="card-text text-body-secondary">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content.</p>
+                    </div>
+                </div>
+
+                <div class="card cardDivCards" onclick="submitBtnClicked()">
+                    <div class="card-body text-center rounded-4 shadow px-4 py-4">
+                        <i class="fa-solid fa-arrow-up-right-dots fs-2 mb-3"></i>
+                        <h5 class="card-title">Social Media Strategy</h5>
+                        <p class="card-text text-body-secondary">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content.</p>
+                    </div>
+                </div>
+
+                <div class="card cardDivCards" onclick="submitBtnClicked()">
+                    <div class="card-body text-center rounded-4 shadow px-4 py-4">
+                        <i class="fa-solid fa-envelope fs-2 mb-3"></i>
+                        <h5 class="card-title">Conversion-Focused Mail Marteking</h5>
+                        <p class="card-text text-body-secondary">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content.</p>
+                    </div>
+                </div>
+
+                <div class="card cardDivCards" onclick="submitBtnClicked()">
+                    <div class="card-body text-center rounded-4 shadow px-4 py-4">
+                        <i class="fa-solid fa-arrow-up-right-dots fs-2 mb-3"></i>
+                        <h5 class="card-title">Paid Advertising (PPC)</h5>
+                        <p class="card-text text-body-secondary">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content.</p>
+                    </div>
+                </div>
+
+                <div class="card cardDivCards" onclick="submitBtnClicked()">
+                    <div class="card-body text-center rounded-4 shadow px-4 py-4">
+                        <i class="fa-solid fa-magnifying-glass fs-2 mb-3"></i>
+                        <h5 class="card-title">Website Design & Development</h5>
+                        <p class="card-text text-body-secondary">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content.</p>
+                    </div>
+                </div>
+
+                <div class="card cardDivCards" onclick="submitBtnClicked()">
+                    <div class="card-body text-center rounded-4 shadow px-4 py-4">
+                        <i class="fa-solid fa-envelope fs-2 mb-3"></i>
+                        <h5 class="card-title">Analytics & Reporting</h5>
+                        <p class="card-text text-body-secondary">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- services card section Ends here -->
+
+
+
+
+
+        <!-- Clients says section Starts from here -->
+        <div class="clientSayDiv pt-4 pb-5">
+            <div class="text-center my-5">
+                <h2 class="fw-bold fs-1 text-capitalize">What our clients say</h2>
+                <p>Shut up! you luck bastered candian adipisicing elit. Autem doloribus.</p>
+            </div>
+
+            <div class="d-md-flex d-lg-flex">
+
+                <div class="card clientSayDivCards mx-auto ms-md-5 ms-lg-5" onclick="submitBtnClicked()">
+                    <div class="card-body rounded-4 shadow px-4 py-4">
+                        <h5 class="card-title fs-1">"</h5>
+                        <p class="card-text text-body-secondary">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content. Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content.</p>
+                        <h6 class="card-title fw-bold mb-0">Sarah K.</h6>
+                        <p>you luck bastered candian adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="card clientSayDivCards mx-auto ms-md-5 ms-lg-5" onclick="submitBtnClicked()">
+                    <div class="card-body rounded-4 shadow px-4 py-4">
+                        <h5 class="card-title fs-1">"</h5>
+                        <p class="card-text text-body-secondary">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content. Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content.</p>
+                        <h6 class="card-title fw-bold mb-0">Alex K.</h6>
+                        <p>you luck bastered candian adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="card clientSayDivCards mx-auto ms-md-5 ms-lg-5" onclick="submitBtnClicked()">
+                    <div class="card-body rounded-4 shadow px-4 py-4">
+                        <h5 class="card-title fs-1">"</h5>
+                        <p class="card-text text-body-secondary">Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content. Some quick example text to build on the card title and
+                            make up the bulk of
+                            the card content.</p>
+                        <h6 class="card-title fw-bold mb-0">Natalia Li.</h6>
+                        <p>you luck bastered candian adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Clients says section Ends here -->
+
+
+
+
+
+        <!-- Schedule Digital Footprint Starts from here -->
+        <div class="footprintDiv text-white d-flex flex-column align-items-center">
+            <h2 class="fw-bolder text-center lh-1 mt-auto mb-4">Ready to Elevate Your Brand's Digital Footprint?</h2>
+            <p class="mb-0">bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+            <p>bla bla bla bla bla bla bla bla bla bla bla bla blab la blabal</p>
+            <button class="btn rounded-5 fw-bolder my-4 py-3 px-5" onclick="submitBtnClicked()">Schedule a Free
+                Candy</button>
+        </div>
+        <!-- Schedule Digital Footprint Ends here -->
+
     </main>
-     <!-- main Ends here -->
+    <!-- main Ends here -->
+
+
+
+
+
+    <!-- footer Starts from here -->
+    <footer class="row pt-5 pb-2">
+
+        <!-- footer upper div Starts from here -->
+        <div class="col-sm-6 col-md-3 col-lg-3 px-5 mb-5">
+            <a class="navbar-brand text-white fs-3 fw-bolder" href="#"
+                onclick="submitBtnClicked()"><span>Digl</span>Boost</a>
+            <p class="text-white mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui molestias vero
+                placeat odit</p>
+        </div>
+
+
+        <div class="col-sm-6 col-md-3 col-lg-3 px-5 mb-5">
+            <h4 class="mb-4">Quick Links</h4>
+            <ul class="ps-2 d-flex flex-column gap-2">
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">fgjkl</a></li>
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">fgjkl</a></li>
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">fgjkl</a></li>
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">fgjkl</a></li>
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">fgjkl</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-3 px-5 mb-5">
+            <h4 class="mb-4">Our Services</h4>
+            <ul class="ps-2 d-flex flex-column gap-2">
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">dfghj klkhgfd</a></li>
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">dfghjklkh gfd</a></li>
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">dfgh jklkhgfd</a></li>
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">dfghjkl khgfd</a></li>
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">dfghj klkhgfd</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-3 px-5 mb-5">
+            <h4 class="mb-4">Connect With Us</h4>
+            <ul class="ps-2 d-flex flex-column gap-3">
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">fgjkldddd dlkjgslj gsjgl sfjgsld fjgs fjg fgjkldddd dlkjgslj gsjgl
+                        sfjgsld fjgs fjg</a></li>
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                        onclick="submitBtnClicked()">fgjkl dddddlk jgslj gsjglsf jgsldf jgsfjg ggfgjkldddd dlkjgslj
+                        gsjgl sfjgsld fjgs fjg</a></li>
+                <ul class="d-flex gap-3 ps-0 mt-2">
+                    <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                            onclick="submitBtnClicked()"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                            onclick="submitBtnClicked()"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                            onclick="submitBtnClicked()"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"
+                            onclick="submitBtnClicked()"><i class="fa-brands fa-accessible-icon"></i></a></li>
+
+                </ul>
+            </ul>
+        </div>
+        <!-- footer upper div Ends here -->
+
+
+
+
+
+        <!-- footer bottom Starts from here -->
+        <hr class="text-white" />
+
+
+        <div class="text-center text-white mt-3">
+            <p>&copy; 2025 <strong>saadsalman708</strong> doesn't have All rights</p>
+            <p>Made with &#10084; by <strong>Saad Salman</strong></p>
+        </div>
+        <!-- footer bottom Ends here -->
+
+    </footer>
+    <!-- footer Ends here -->
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
     integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
     crossorigin="anonymous"></script>
+
+<script src="./app.js"></script>
+
 </html>

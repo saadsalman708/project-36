@@ -1,36 +1,36 @@
 * {
     user-select: none;
-    /* border: 1px solid; */
-
 }
 
-
-:root  {
+:root {
     --Logo-color: #8187e3;
-    --heading-color: #392f83;
     --Cards-bgDiv-color: #DAD0FF;
-
-    /* second last div */
-/* background: #1E293B;
-background: linear-gradient(90deg, rgba(30, 41, 59, 1) 0%, rgba(48, 45, 127, 1) 100%); */
-
-/* last div */
-/* background: #12192B;
-background: linear-gradient(90deg, rgba(18, 25, 43, 1) 0%, rgba(48, 43, 134, 1) 100%); */
 }
 
+
+
+/* nav Starts from here */
 nav {
     background: #322C86;
     background: linear-gradient(90deg, rgba(50, 44, 134, 1) 0%, rgba(109, 20, 175, 1) 100%);
 }
 
-nav span {
+span {
     color: var(--Logo-color);
 }
 
+/* nav Ends here */
+
+
+
+
+
+/* main Starts from here */
+
+/* hero section Start from here */
 .hero1 {
-    height: 90vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7)), url(https://saadsalman708.github.io/1st-Hackerthon/assets/image%2020.png);
+    padding-top: 8rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url(https://saadsalman708.github.io/1st-Hackerthon/assets/image%2020.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -46,6 +46,144 @@ nav span {
 }
 
 .hero1 button:hover {
-    background-color: var(--heading-color);
+    background-color: #392f83;
     border: 1px solid #ffffff;
+}
+
+/* hero section Ends here */
+
+
+
+
+
+/* service section Starts from here */
+.serviceCardDiv h2 {
+    color: #483fbe;
+}
+
+.cardDivCards {
+    width: 30vw;
+    margin-bottom: 1.5rem;
+    border: none;
+}
+
+.serviceCardDiv i {
+    color: #503df6;
+}
+
+/* service section Ends here */
+
+
+
+
+
+/* client says section Starts from here */
+.clientSayDiv {
+    background-color: var(--Cards-bgDiv-color);
+}
+
+.clientSayDiv h2 {
+    color: #483fbe;
+}
+
+.clientSayDivCards {
+    width: 24rem;
+    margin-bottom: 1.5rem;
+    border: none;
+}
+
+/* client says section Ends here */
+
+
+
+
+
+/* schedule Digital footprint section Starts from here */
+.footprintDiv {
+    padding: 8rem 0 4rem 0;
+    background: #1E293B;
+    background: linear-gradient(90deg, rgba(30, 41, 59, 1) 0%, rgba(48, 45, 127, 1) 100%);
+}
+
+.footprintDiv h2 {
+    font-size: 4rem;
+}
+
+.footprintDiv button {
+    color: #503df6;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+.footprintDiv button:hover {
+    background-color: #8187e3;
+    border: 2px solid #fff;
+}
+
+/* schedule Digital footprint section Ends here */
+
+/* main Ends here */
+
+
+
+
+
+
+/* footer Starts from here */
+footer {
+    width: 101%;
+    background: #12192B;
+    background: linear-gradient(90deg, rgba(18, 25, 43, 1) 0%, rgba(48, 43, 134, 1) 100%);
+}
+
+h4 {
+    color: var(--Logo-color);
+}
+
+/* footer Ends here */
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+
+
+    /* hero section Start from here */
+    .hero1 h2 {
+        font-size: 3rem;
+    }
+
+
+
+    /* service section Starts from here */
+    .cardDivCards {
+        width: 100%;
+    }
+
+
+
+    /* client says section Starts from here */
+    .clientSayDivCards {
+        width: 90%;
+    }
+
+
+
+    /* schedule Digital footprint section Starts from here */
+    .footprintDiv h2 {
+        font-size: 2.5rem;
+    }
+
+
+
+    /* footer Starts from here */
+    footer {
+        width: 103%;
+    }
 }
