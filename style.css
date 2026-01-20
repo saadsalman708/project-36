@@ -19,6 +19,26 @@ span {
     color: var(--Logo-color);
 }
 
+nav li a {
+    position: relative;
+}
+
+nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    border-radius: 99px;
+    background-color: #fff;
+    transition: width ease 0.4s;
+}
+
+nav li a:hover::after {
+    width: 100%;
+}
+
 /* nav Ends here */
 
 
@@ -50,6 +70,10 @@ span {
     border: 1px solid #ffffff;
 }
 
+.hero1 button:active {
+    background-color: #fff;
+}
+
 /* hero section Ends here */
 
 
@@ -62,9 +86,9 @@ span {
 }
 
 .cardDivCards {
-    width: 30vw;
-    margin-bottom: 1.5rem;
     border: none;
+    margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .serviceCardDiv i {
@@ -151,6 +175,39 @@ h4 {
 
 
 
+.swal-responsive-img {
+    max-width: 90vw;
+    max-height: 70vh !important;
+    width: auto;
+    height: auto;
+}
+
+.swal-responsive-img img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 720px) {
+
+    .cardDivCards {
+        width: 45% !important;
+    }
+}
+
+
+
+
 @media (max-width: 750px) {
 
 
@@ -185,5 +242,22 @@ h4 {
     /* footer Starts from here */
     footer {
         width: 103%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 980px) {
+
+    .cardDivCards {
+        width: 30% !important;
     }
 }
